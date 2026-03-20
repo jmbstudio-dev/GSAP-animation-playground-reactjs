@@ -1,6 +1,6 @@
 # 🎬 GSAP Animation Playground
 
-A collection of 12 (FOR NOW) GSAP animation demos built with React + Vite + Tailwind CSS. Each animation is isolated in its own component card, making it easy to study, copy, and reuse.
+A collection of 15 GSAP animation demos built with React + Vite + Tailwind CSS. Each animation is isolated in its own component card, making it easy to study, copy, and reuse.
 
 ## ✨ Animations Included
 
@@ -18,6 +18,9 @@ A collection of 12 (FOR NOW) GSAP animation demos built with React + Vite + Tail
 | 10 | Split Text | Words split and fall into place |
 | 11 | Hover Cursor | Custom cursor that reacts to elements |
 | 12 | Page Transition | Smooth wipe transition between states |
+| 13 | Card Flip | 3D flip reveal on click |
+| 14 | Spotlight | Cursor creates a light beam effect |
+| 15 | Wave | Elements wave in a fluid rhythm |
 
 ---
 
@@ -26,6 +29,7 @@ A collection of 12 (FOR NOW) GSAP animation demos built with React + Vite + Tail
 - [React](https://react.dev/) + [Vite](https://vitejs.dev/)
 - [Tailwind CSS v4](https://tailwindcss.com/)
 - [GSAP](https://gsap.com/) + [@gsap/react](https://gsap.com/docs/v3/Installation/?tab=npm)
+- [Lucide React](https://lucide.dev/) — icons
 
 ---
 
@@ -117,7 +121,8 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin, MotionPathPlugin);
 ## 📁 Project Structure
 ```
 src/
-├── animations/          # Individual animation components
+├── animations/               # Individual animation components
+│   ├── CardFlip.jsx
 │   ├── Counter.jsx
 │   ├── HoverCursor.jsx
 │   ├── MagneticButton.jsx
@@ -126,16 +131,18 @@ src/
 │   ├── RippleEffect.jsx
 │   ├── ScrollTriggerDemo.jsx
 │   ├── SplitText.jsx
+│   ├── Spotlight.jsx
 │   ├── Stagger.jsx
 │   ├── SVGMorph.jsx
 │   ├── TextReveal.jsx
-│   └── Timeline.jsx
+│   ├── Timeline.jsx
+│   └── Wave.jsx
 ├── components/
-│   └── AnimationCard.jsx  # Shared card wrapper
+│   └── AnimationCard.jsx     # Shared card wrapper
 ├── data/
-│   └── animations.js      # Animation metadata
+│   └── animations.js         # Animation metadata
 ├── pages/
-│   └── Home.jsx           # Main grid layout
+│   └── Home.jsx              # Main grid layout
 ├── App.jsx
 ├── main.jsx
 └── index.css
@@ -175,10 +182,6 @@ import { YourAnimation } from "../animations/YourAnimation";
 
 ---
 
-## 📄 License
+## 📄
 
-MIT — free to use, modify, and share.
-
----
-
-Made by [John Melvin Burgos](https://github.com/jmbstudio-dev)
+MIT — feel free to use, modify, and share.

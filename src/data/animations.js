@@ -59,4 +59,19 @@ export const animationList = [
     title: "Page Transition",
     description: "Smooth wipe transition between states.",
   },
+  {
+    id: "card-flip",
+    title: "Card Flip",
+    description: "3D flip reveal on click.",
+  },
+  {
+    id: "spotlight",
+    title: "Spotlight",
+    description: "Cursor creates a light beam effect.",
+  },
+  {
+    id: "wave",
+    title: "Wave",
+    description: "Elements wave in a fluid rhythm.",
+  },
 ];
