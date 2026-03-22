@@ -183,5 +183,4 @@ import { YourAnimation } from "../animations/YourAnimation";
 ---
 
 ## 📄
-
 MIT — feel free to use, modify, and share.
